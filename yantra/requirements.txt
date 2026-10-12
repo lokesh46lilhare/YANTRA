@@ -1,0 +1,7 @@
+streamlit>=1.36
+pandas
+werkzeug
+python-dotenv
+Pillow
+plotly
+reportlab  # optional: admin PDF summary

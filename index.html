@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10293d">
+  <meta name="description" content="YANTRA brings engineering workers, services, tools and machinery together.">
+  <title>YANTRA | Your All-in-One Network for Technical Resources &amp; Assistance</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=4">
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">मुख्य सामग्री पर जाएँ</a>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="#home" aria-label="YANTRA home"><span class="brand-mark" aria-hidden="true">Y</span><span>YANTRA<small data-i18n="brandLine">Your All-in-One Network for Technical Resources &amp; Assistance</small></span></a>
+      <button class="icon-button menu-toggle" id="menu-toggle" type="button" aria-label="मेन्यू खोलें" aria-expanded="false"><i data-lucide="menu"></i></button>
+      <nav class="main-nav" id="main-nav" aria-label="मुख्य नेविगेशन">
+        <a href="#home" data-i18n="navHome">होम</a><a href="#workers" data-i18n="navWorkers">कामगार खोजें</a><a href="#labour-rates" data-i18n="navLabour">मजदूरी दरें</a><a href="#monthly-services" data-i18n="navMonthly">मासिक घरेलू सेवाएँ</a><a href="#services" data-i18n="navServices">सेवाएँ</a><a href="#tools" data-i18n="navTools">औजार</a><a href="#machinery" data-i18n="navMachines">मशीनरी</a><a href="#rent" data-i18n="navRent">किराया</a><a href="#post-job" data-i18n="navPost">काम पोस्ट करें</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="language-switch" id="language-switch" type="button" aria-label="Switch language">EN</button>
+        <button class="icon-button" id="favorites-open" type="button" aria-label="पसंदीदा खोलें"><i data-lucide="heart"></i><span id="favorite-count">0</span></button>
+        <button class="icon-button" id="cart-open" type="button" aria-label="कार्ट खोलें"><i data-lucide="shopping-bag"></i><span id="cart-count">0</span></button>
+        <button class="button button-small button-login" id="login-open" type="button" data-i18n="loginButton">लॉगिन</button>
+        <a class="button button-small button-orange" href="#register" data-i18n="registerCta">रजिस्टर करें</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home">
+      <img class="hero-photo" src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&amp;fit=crop&amp;w=2200&amp;q=88" alt="निर्माण स्थल पर काम करते इंजीनियर और श्रमिक" data-fallback="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&amp;fit=crop&amp;w=1800&amp;q=80">
+      <div class="hero-shade"></div>
+      <div class="hero-content page-width">
+        <p class="eyebrow"><span class="status-dot"></span><span data-i18n="heroEyebrow">काम, कौशल और मशीनरी — एक जगह</span></p>
+        <h1><span>YANTRA</span> — <span data-i18n="heroTitle">आपकी इंजीनियरिंग जरूरतों का एकमात्र प्लेटफॉर्म</span></h1>
+        <p class="hero-en" data-i18n="heroEnglish">Your All-in-One Network for Technical Resources &amp; Assistance</p>
+        <p class="hero-copy" data-i18n="heroCopy">कुशल और अकुशल कामगार, इंजीनियर, तकनीशियन, सेवाएँ, औजार और भारी मशीनरी — अपनी जरूरत के विकल्प एक ही जगह खोजें।</p>
+        <div class="hero-actions">
+          <a class="button button-orange" href="#workers"><i data-lucide="users"></i><span data-i18n="findWorkers">कामगार खोजें</span></a>
+          <a class="button button-light-outline" href="#tools"><i data-lucide="wrench"></i><span data-i18n="exploreTools">औजार देखें</span></a>
+          <a class="button button-light-outline" href="#rent"><i data-lucide="truck"></i><span data-i18n="rentMachine">मशीन किराए पर लें</span></a>
+          <a class="button button-quiet" href="#post-job"><span data-i18n="postJob">काम पोस्ट करें</span><i data-lucide="arrow-up-right"></i></a>
+        </div>
+        <form class="hero-search" id="hero-search">
+          <label class="search-field"><i data-lucide="search"></i><input id="global-search" type="search" placeholder="काम, सेवा या मशीन खोजें" data-placeholder-hi="काम, सेवा या मशीन खोजें" data-placeholder-en="Search a trade, service or machine"></label>
+          <label class="search-field location-field"><i data-lucide="map-pin"></i><select id="global-location" data-mp-district data-include-all="true" aria-label="District"></select></label>
+          <button class="button button-orange search-submit" type="submit" data-i18n="search">खोजें</button>
+        </form>
+        <p class="hero-note" id="hero-note" data-i18n="demoNote">डेमो प्लेटफॉर्म • यहां दिखाई गई कैटेगरी वास्तविक या सत्यापित प्रदाता नहीं हैं</p>
+      </div>
+      <div class="hero-index" aria-hidden="true"><b>01</b><span>ENGINEERING MARKETPLACE</span></div>
+    </section>
+    <section class="trust-strip"><div class="page-width trust-inner"><span data-i18n="trustOne">मानव कौशल</span><span data-i18n="trustTwo">इंजीनियरिंग सेवाएँ</span><span data-i18n="trustThree">औजार एवं उपकरण</span><span data-i18n="trustFour">भारी मशीनरी</span></div></section>
+
+    <section class="section page-width" id="workers">
+      <div class="section-head"><div><p class="section-kicker" data-i18n="workersKicker">01 / WORKFORCE</p><h2 data-i18n="workersTitle">सही काम के लिए सही कौशल</h2><p class="section-intro" data-i18n="workersIntro">विभिन्न ट्रेड और तकनीकी भूमिकाओं की कैटेगरी देखें। लाइव प्रोफाइल और सत्यापन इस डेमो में उपलब्ध नहीं हैं।</p></div><a class="text-link" href="#worker-registration" data-i18n="registerWorkerLink">कामगार के रूप में जुड़ें <i data-lucide="arrow-up-right"></i></a></div>
+      <div class="filter-row"><label class="filter-search"><i data-lucide="search"></i><input id="worker-search" type="search" placeholder="कौशल या काम खोजें" data-placeholder-hi="कौशल या काम खोजें" data-placeholder-en="Search a skill or trade"></label><label class="select-field"><span class="sr-only" data-i18n="district">जिला</span><select id="worker-city" data-mp-district data-include-all="true"></select></label><input class="locality-filter" id="worker-town" type="search" placeholder="शहर / कस्बा" data-placeholder-hi="शहर / कस्बा" data-placeholder-en="Town / city"><input class="locality-filter" id="worker-locality" type="search" placeholder="इलाका / लोकेशन" data-placeholder-hi="इलाका / लोकेशन" data-placeholder-en="Locality / area"><span class="filter-hint" id="worker-district-note" data-i18n="categoryDemo">कैटेगरी डेमो • वास्तविक प्रोफाइल नहीं</span></div>
+      <div class="card-grid worker-grid" id="worker-grid"></div><p class="empty-state hidden" id="worker-empty" data-i18n="noResults">इस खोज से मेल खाती कोई कैटेगरी नहीं मिली।</p>
+    </section>
+
+    <section class="section page-width labour-section" id="labour-rates">
+      <div class="section-head"><div><p class="section-kicker" data-i18n="labourKicker">02 / ALL 55 DISTRICTS</p><h2 data-i18n="districtMarketTitle">मध्य प्रदेश के सभी जिलों में YANTRA</h2><p class="section-intro" data-i18n="districtMarketIntro">मजदूर, इंजीनियरिंग सेवाएँ, औजार और किराए का सामान — आपके जिले में।<br>One Platform. All 55 Districts. Every Engineering Need.</p></div><a class="button button-orange" href="#labour-calculator"><i data-lucide="calculator"></i><span data-i18n="calculateLabour">मजदूरी कैलकुलेट करें</span></a></div>
+      <div class="labour-subheading"><h3 data-i18n="labourTitle">एक दिन की अनुमानित मजदूरी</h3><p class="section-intro" data-i18n="labourIntro">जिला और काम चुनकर शुरुआती मजदूरी रेंज देखें और कई कामगारों का अनुमान निकालें। ये सत्यापित स्थानीय कोटेशन या लाइव उपलब्धता नहीं हैं।</p></div>
+      <div class="wage-reference" role="note"><div><p class="reference-label" data-i18n="wageReferenceTitle">न्यूनतम वेतन संदर्भ • जानकारी उपयोगकर्ता द्वारा दी गई</p><p data-i18n="wageReferenceCopy">मध्य प्रदेश संदर्भ दरें (प्रभावी 01 अक्टूबर 2026 बताई गई): अकुशल ₹484, अर्ध-कुशल ₹522, कुशल ₹588, अति-कुशल ₹651 प्रतिदिन। यहां स्वतंत्र सरकारी सत्यापन नहीं हुआ है; वास्तविक बुकिंग से पहले लागू आधिकारिक दर की पुष्टि करें।</p></div><span class="reference-date" data-i18n="rateDisclaimer">अनुमानित दर • अंतिम पुष्टि आवश्यक</span></div>
+      <div class="labour-controls"><label class="select-field"><span data-i18n="district">जिला</span><select id="labour-city" data-mp-district></select></label><label class="filter-search"><i data-lucide="map-pin"></i><input id="labour-town" type="search" placeholder="शहर / कस्बा / इलाका" data-placeholder-hi="शहर / कस्बा / इलाका" data-placeholder-en="Town / city / locality"></label><label class="filter-search"><i data-lucide="search"></i><input id="labour-search" type="search" placeholder="मजदूर या काम खोजें" data-placeholder-hi="मजदूर या काम खोजें" data-placeholder-en="Search labour or trade"></label><span class="filter-hint" data-i18n="labourLocalHint">सामान्य शुरुआती अनुमान • शहर-विशेष पुष्टि बाकी</span></div>
+      <div class="labour-grid" id="labour-grid" aria-live="polite"></div>
+      <p class="empty-state hidden" id="labour-empty" data-i18n="labourNoResults">इस खोज से कोई श्रेणी नहीं मिली।</p>
+      <div class="labour-calc-layout" id="labour-calculator">
+        <div class="labour-calc-copy"><p class="section-kicker" data-i18n="calculatorKicker">DAILY ESTIMATE</p><h3 data-i18n="calculatorTitle">कितने कामगार और कितने दिन?</h3><p data-i18n="calculatorIntro">अनुमान = कामगार × दैनिक दर × दिन। ओवरटाइम और चुने गए अतिरिक्त खर्च अलग जोड़े जाते हैं। सामग्री की कीमत शामिल नहीं है।</p><div class="formula-box"><b data-i18n="formulaLabel">कुल मजदूरी</b><span data-i18n="formulaText">कामगारों की संख्या × प्रतिदिन की दर × काम के दिन</span></div><p class="form-note" data-i18n="estimateDisclosure">यह केवल अनुमान है, बुकिंग/उपलब्धता की पुष्टि नहीं। शुल्क और दर अंतिम तौर पर प्रदाता से तय होंगे।</p></div>
+        <form class="form-panel labour-booking-form" id="labour-booking-form">
+          <h3 data-i18n="bookingFormTitle">मजदूरी का अनुमान और अनुरोध</h3><div class="form-grid">
+            <label><span data-i18n="district">जिला *</span><select name="district" id="booking-city" data-mp-district required></select></label>
+            <label><span data-i18n="town">शहर / कस्बा</span><input name="town" id="booking-town" placeholder="वैकल्पिक" data-placeholder-hi="वैकल्पिक" data-placeholder-en="Optional"></label>
+            <label><span data-i18n="locality">इलाका / लोकेशन</span><input name="locality" id="booking-locality" placeholder="वैकल्पिक" data-placeholder-hi="वैकल्पिक" data-placeholder-en="Optional"></label>
+            <label class="full-field"><span data-i18n="labourCategory">कामगार / श्रेणी *</span><select name="category" id="booking-category" required></select></label>
+            <label><span data-i18n="workerCount">कामगारों की संख्या *</span><input name="workerCount" id="booking-workers" type="number" min="1" max="500" value="1" required></label>
+            <label><span data-i18n="workDays">काम के दिन *</span><input name="days" id="booking-days" type="number" min="1" max="365" value="1" required></label>
+            <label><span data-i18n="dailyHours">रोज़ के काम के घंटे (8 से ऊपर ओवरटाइम)</span><input name="hours" id="booking-hours" type="number" min="1" max="24" value="8" required></label>
+            <label><span data-i18n="dailyRate">दैनिक दर प्रति कामगार (₹) *</span><input name="dailyRate" id="booking-rate" type="number" min="1" step="10" value="500" required><small class="field-hint" id="booking-rate-hint"></small></label>
+            <label class="full-field"><span data-i18n="workDescription">काम का विवरण</span><textarea name="description" id="booking-description" rows="3" maxlength="500" placeholder="काम, स्थान या विशेष जरूरत" data-placeholder-hi="काम, स्थान या विशेष जरूरत" data-placeholder-en="Work, location or special requirements"></textarea></label>
+            <label class="checkbox-row full-field"><input name="toolsRequired" id="booking-tools-required" type="checkbox"><span data-i18n="toolsRequired">औजार चाहिए (औजार शुल्क अलग जुड़ सकता है)</span></label>
+            <label><span data-i18n="travelCharge">आने-जाने का खर्च (₹)</span><input name="travelCharge" id="booking-travel" type="number" min="0" step="10" value="0"></label>
+            <label><span data-i18n="otherCharges">अन्य अतिरिक्त खर्च (₹)</span><input name="otherCharge" id="booking-other-charge" type="number" min="0" step="10" value="0"></label>
+          </div>
+          <div class="estimate-panel" id="labour-estimate" aria-live="polite"><div class="estimate-heading"><div><p class="section-kicker" data-i18n="estimatedTotal">अनुमानित भुगतान</p><strong id="estimate-total">₹0</strong></div><span id="estimate-status" class="estimate-badge"></span></div><dl class="estimate-rows"><div><dt data-i18n="baseWages">कुल मजदूरी</dt><dd id="estimate-base">₹0</dd></div><div><dt data-i18n="overtimeCharge">ओवरटाइम</dt><dd id="estimate-overtime">₹0</dd></div><div><dt data-i18n="toolsCharge">औजार</dt><dd id="estimate-tools">₹0</dd></div><div><dt data-i18n="travelCharge">आना-जाना</dt><dd id="estimate-travel">₹0</dd></div><div><dt data-i18n="otherCharges">अन्य खर्च</dt><dd id="estimate-other">₹0</dd></div></dl><p class="estimate-footnote" id="estimate-breakdown"></p></div>
+          <button class="button button-orange" type="submit" data-i18n="confirmPrice">कीमत की पुष्टि हेतु अनुरोध करें</button><p class="form-note" data-i18n="bookingLocalNote">डेमो अनुरोध इसी ब्राउज़र में सहेजा जाएगा; कोई कामगार बुक या भुगतान नहीं होगा। वास्तविक निजी जानकारी न भरें।</p><p class="form-success hidden" id="booking-success" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+      <details class="admin-rate-panel" id="labour-admin"><summary><span data-i18n="adminRates">डेमो एडमिन: जिला-वार मजदूरी दरें प्रबंधित करें</span></summary><div class="admin-panel-body"><p class="form-note" data-i18n="adminRateNote">यह बिना लॉगिन वाला लोकल डेमो कंट्रोल है। सहेजे गए रेट केवल इसी ब्राउज़र में लागू होंगे, सार्वजनिक/सर्वर दरें नहीं। न्यूनतम दर लागू संदर्भ वेतन से कम स्वीकार नहीं होगी।</p>
+        <form id="labour-admin-form"><div class="form-grid"><label><span data-i18n="district">जिला</span><select name="district" id="admin-city" data-mp-district required></select></label><label><span data-i18n="labourCategory">कामगार / श्रेणी</span><select name="category" id="admin-category"></select></label><label><span data-i18n="minimumRate">न्यूनतम दैनिक दर (₹)</span><input name="minRate" id="admin-min" type="number" min="1" required></label><label><span data-i18n="maximumRate">अधिकतम दैनिक दर (₹)</span><input name="maxRate" id="admin-max" type="number" min="1" required></label><label><span data-i18n="effectiveDate">दर लागू होने की तारीख</span><input name="effectiveDate" id="admin-effective" type="date" required></label><label><span data-i18n="lastUpdated">अंतिम दर अपडेट</span><input name="updatedAt" id="admin-updated" type="date" required></label><label><span data-i18n="overtimeRate">ओवरटाइम दर (₹/घंटा/कामगार)</span><input name="overtimeRate" id="admin-overtime" type="number" min="0" step="10" required></label><label><span data-i18n="availableCount">उपलब्धता संकेत (कामगार)</span><input name="availableCount" id="admin-available" type="number" min="0" step="1" placeholder="खाली = पुष्टि बाकी"></label><label><span data-i18n="toolsFeeAdmin">औजार शुल्क (₹/अनुरोध)</span><input name="toolsFee" id="admin-tools-fee" type="number" min="0" step="10" value="0"></label><label><span data-i18n="adminExtraFee">अन्य डिफ़ॉल्ट शुल्क (₹/अनुरोध)</span><input name="extraFee" id="admin-extra-fee" type="number" min="0" step="10" value="0"></label></div><button class="button button-orange" type="submit" data-i18n="saveRates">दरें सहेजें</button><p class="form-success hidden" id="admin-success" role="status" aria-live="polite"></p></form>
+        <div class="admin-requests"><h4 data-i18n="bookingRequests">डेमो बुकिंग अनुरोध</h4><div id="labour-requests-list"></div></div>
+      </div></details>
+    </section>
+
+    <section class="section page-width monthly-section" id="monthly-services">
+      <div class="section-head"><div><p class="section-kicker" data-i18n="monthlyKicker">03 / MONTHLY HOME SERVICES</p><h2 data-i18n="monthlyTitle">कम बजट का मासिक घरेलू सेवा चार्ट</h2><p class="section-intro" data-i18n="monthlyIntro">खाना बनाना, सफाई, कपड़े और देखभाल के लिए दिए गए मासिक अनुमान देखें। कीमतें अवधि, घंटे और शहर के अनुसार बदल सकती हैं।</p></div><a class="button button-orange" href="#post-job"><i data-lucide="clipboard-list"></i><span data-i18n="monthlyRequest">सेवा का अनुरोध करें</span></a></div>
+      <div class="monthly-disclosure"><span data-i18n="monthlyEstimate">उपयोगकर्ता द्वारा दिए गए संकेतात्मक मासिक रेट • स्थानीय पुष्टि आवश्यक</span><span data-i18n="monthlyCompliance">ये कानूनी न्यूनतम वेतन की पुष्टि या उपलब्ध सेवा की गारंटी नहीं हैं। काम के घंटे और लागू नियम जाँचें।</span></div>
+      <div class="catalog-controls monthly-controls"><label class="filter-search"><i data-lucide="search"></i><input id="monthly-search" type="search" placeholder="घरेलू सेवा खोजें" data-placeholder-hi="घरेलू सेवा खोजें" data-placeholder-en="Search home services"></label><label class="select-field"><span class="sr-only" data-i18n="district">जिला</span><select id="monthly-district" data-mp-district data-include-all="true"></select></label><span class="demo-price-note" id="monthly-district-note" data-i18n="monthlyCoverage">जिला चुनें • स्थानीय प्रदाता सत्यापित नहीं</span></div>
+      <div class="monthly-grid" id="monthly-grid"></div><p class="empty-state hidden" id="monthly-empty" data-i18n="monthlyNoResults">इस खोज से कोई सेवा नहीं मिली।</p>
+    </section>
+
+    <section class="band-section" id="services"><div class="page-width section">
+      <div class="section-head"><div><p class="section-kicker" data-i18n="servicesKicker">03 / ENGINEERING SERVICES</p><h2 data-i18n="servicesTitle">प्रोजेक्ट और मेंटेनेंस सेवाएँ</h2><p class="section-intro" data-i18n="servicesIntro">काम की कैटेगरी देखें और अपनी आवश्यकता साझा करें।</p></div><a class="text-link" href="#post-job" data-i18n="requestService">सेवा का अनुरोध करें <i data-lucide="arrow-up-right"></i></a></div>
+      <div class="card-grid service-grid" id="service-grid"></div>
+    </div></section>
+
+    <section class="section page-width" id="tools">
+      <div class="section-head"><div><p class="section-kicker" data-i18n="toolsKicker">04 / TOOLS &amp; EQUIPMENT</p><h2 data-i18n="toolsTitle">वर्कशॉप से साइट तक के औजार</h2><p class="section-intro" data-i18n="toolsIntro">कैटेगरी ब्राउज़ करें, पसंदीदा में रखें या डेमो इन्क्वायरी कार्ट में जोड़ें।</p></div><button class="text-link button-link" id="tools-cart-link" type="button"><span data-i18n="viewCart">इन्क्वायरी कार्ट</span> <span id="tools-cart-count">(0)</span> <i data-lucide="arrow-up-right"></i></button></div>
+      <div class="catalog-controls"><label class="filter-search"><i data-lucide="search"></i><input id="product-search" type="search" placeholder="उपकरण खोजें" data-placeholder-hi="उपकरण खोजें" data-placeholder-en="Search equipment"></label><label class="select-field"><span class="sr-only" data-i18n="category">कैटेगरी</span><select id="product-category"><option value="all" data-i18n="allCategories">सभी कैटेगरी</option></select></label><label class="select-field"><span class="sr-only" data-i18n="district">जिला</span><select id="product-district" data-mp-district data-include-all="true"></select></label><span class="demo-price-note" id="product-district-note" data-i18n="quoteNote">डेमो कैटलॉग • कीमत के लिए पूछताछ करें</span></div>
+      <div class="card-grid product-grid" id="product-grid"></div>
+    </section>
+
+    <section class="machinery-section" id="machinery"><div class="page-width section">
+      <div class="section-head section-head-light"><div><p class="section-kicker" data-i18n="machinesKicker">05 / HEAVY MACHINERY</p><h2 data-i18n="machinesTitle">बड़े काम के लिए भारी मशीनें</h2><p class="section-intro" data-i18n="machinesIntro">मशीन कैटेगरी देखें; उपलब्धता और दरें सप्लायर से पुष्टि के बाद ही तय होंगी।</p></div><a class="button button-orange" href="#rent"><i data-lucide="calendar-days"></i><span data-i18n="rentalOptions">किराये के विकल्प</span></a></div>
+      <div class="catalog-controls"><label class="select-field"><span class="sr-only" data-i18n="district">जिला</span><select id="machinery-district" data-mp-district data-include-all="true"></select></label><span class="demo-price-note" id="machinery-district-note" data-i18n="districtCatalogNote">डेमो कैटेगरी • जिला-वार वास्तविक लिस्टिंग उपलब्ध नहीं</span></div>
+      <div class="card-grid machinery-grid" id="machinery-grid"></div>
+    </div></section>
+
+    <section class="rent-section" id="rent"><div class="page-width section rent-layout">
+      <div class="rent-copy"><p class="section-kicker" data-i18n="rentKicker">06 / MACHINERY RENTAL</p><h2 data-i18n="rentTitle">मशीन किराये की जरूरत साझा करें</h2><p data-i18n="rentIntro">अपना जिला, शहर, मशीन का प्रकार और अवधि बताएं। यह डेमो अनुरोध केवल इसी ब्राउज़र में सहेजा जाएगा; कोई बुकिंग या उपलब्धता पक्की नहीं होती।</p><div class="rent-points"><span><i data-lucide="map-pin"></i><span data-i18n="locationFilter">लोकेशन के आधार पर</span></span><span><i data-lucide="calendar"></i><span data-i18n="durationFilter">अवधि के आधार पर</span></span><span><i data-lucide="indian-rupee"></i><span data-i18n="budgetFilter">बजट के आधार पर</span></span></div></div>
+      <form class="form-panel" id="rental-form"><h3 data-i18n="rentalFormTitle">किराया अनुरोध</h3><div class="form-grid">
+        <label><span data-i18n="machineType">मशीन का प्रकार *</span><select name="machine" id="rental-machine" required><option value="" data-i18n="chooseOption">चुनें</option></select></label>
+        <label><span data-i18n="district">जिला *</span><select name="district" data-mp-district required></select></label>
+        <label><span data-i18n="town">शहर / कस्बा</span><input name="town" autocomplete="address-level2" placeholder="वैकल्पिक" data-placeholder-hi="वैकल्पिक" data-placeholder-en="Optional"></label>
+        <label class="full-field"><span data-i18n="locality">इलाका / लोकेशन</span><input name="locality" placeholder="वैकल्पिक" data-placeholder-hi="वैकल्पिक" data-placeholder-en="Optional"></label>
+        <label><span data-i18n="rentalPeriod">किराये की अवधि *</span><select name="period" required><option value="" data-i18n="chooseOption">चुनें</option><option value="hour" data-i18n="hourly">प्रति घंटा</option><option value="day" data-i18n="daily">प्रति दिन</option><option value="week" data-i18n="weekly">एक सप्ताह या अधिक</option></select></label>
+        <label><span data-i18n="budget">अनुमानित बजट (₹)</span><input name="budget" type="number" min="0" inputmode="numeric" placeholder="वैकल्पिक" data-placeholder-hi="वैकल्पिक" data-placeholder-en="Optional"></label>
+        <label class="full-field"><span data-i18n="phone">मोबाइल नंबर *</span><input name="phone" type="tel" required pattern="[0-9+() -]{8,18}" autocomplete="tel" placeholder="10 अंकों का नंबर" data-placeholder-hi="10 अंकों का नंबर" data-placeholder-en="Phone number"></label>
+      </div><button class="button button-orange" type="submit" data-i18n="sendRequest">अनुरोध भेजें</button><p class="form-note" data-i18n="localDemo">डेमो: जानकारी आपके ब्राउज़र में ही रहेगी।</p></form>
+    </div></section>
+
+    <section class="band-section" id="post-job"><div class="page-width section job-layout">
+      <div><p class="section-kicker" data-i18n="postKicker">07 / POST A REQUIREMENT</p><h2 data-i18n="postTitle">अपने काम की जरूरत बताएं</h2><p class="section-intro" data-i18n="postIntro">ठेकेदार और ग्राहक काम की जानकारी दर्ज कर सकते हैं। सबमिशन केवल लोकल डेमो रिकॉर्ड है; किसी कामगार को असाइन नहीं किया जाता।</p><ul class="check-list"><li data-i18n="jobPointOne">काम और कौशल का प्रकार</li><li data-i18n="jobPointTwo">स्थान, अवधि और लोगों की संख्या</li><li data-i18n="jobPointThree">बजट, तारीख और मशीनरी की जरूरत</li></ul></div>
+      <form class="form-panel" id="job-form"><div class="form-title-row"><h3 data-i18n="jobFormTitle">काम की जानकारी</h3><span class="required-note" data-i18n="requiredNote">* जरूरी</span></div><div class="form-grid">
+        <label><span data-i18n="fullName">पूरा नाम *</span><input name="name" required autocomplete="name"></label><label><span data-i18n="phone">मोबाइल नंबर *</span><input name="phone" type="tel" required pattern="[0-9+() -]{8,18}" autocomplete="tel"></label>
+        <label><span data-i18n="district">जिला *</span><select name="district" data-mp-district required></select></label><label><span data-i18n="town">शहर / कस्बा</span><input name="town" autocomplete="address-level2"></label>
+        <label><span data-i18n="locality">इलाका / लोकेशन</span><input name="locality"></label><label><span data-i18n="workType">काम का प्रकार *</span><input name="work" required></label>
+        <label><span data-i18n="workersNeeded">कितने लोग चाहिए?</span><input name="people" type="number" min="1" max="500" inputmode="numeric"></label><label><span data-i18n="workerType">कौशल स्तर</span><select name="level"><option data-i18n="chooseOption">चुनें</option><option data-i18n="skilled">कुशल</option><option data-i18n="unskilled">अकुशल / हेल्पर</option><option data-i18n="both">दोनों</option></select></label>
+        <label><span data-i18n="duration">अवधि (दिन)</span><input name="duration" type="number" min="1" inputmode="numeric"></label><label><span data-i18n="startDate">शुरू करने की तारीख</span><input name="date" type="date"></label>
+        <label><span data-i18n="budget">अनुमानित बजट (₹)</span><input name="budget" type="number" min="0" inputmode="numeric"></label><label><span data-i18n="equipmentNeed">औजार / मशीनरी</span><input name="equipment"></label>
+        <label class="full-field"><span data-i18n="description">काम का पूरा विवरण *</span><textarea name="description" rows="4" required></textarea></label>
+      </div><button class="button button-orange" type="submit" data-i18n="postRequirement">जरूरत पोस्ट करें</button><p class="form-note" data-i18n="localDemo">डेमो: जानकारी आपके ब्राउज़र में ही रहेगी।</p></form>
+    </div></section>
+
+    <section class="section page-width" id="register"><div class="section-head"><div><p class="section-kicker" data-i18n="joinKicker">08 / JOIN YANTRA</p><h2 data-i18n="joinTitle">कामगार और सप्लायर के लिए रजिस्ट्रेशन</h2><p class="section-intro" data-i18n="joinIntro">प्रोफाइल विवरण डेमो के तौर पर इसी डिवाइस पर सहेजे जाते हैं। कोई सार्वजनिक लिस्टिंग या असली अकाउंट नहीं बनता।</p></div></div>
+      <div class="registration-grid">
+        <form class="form-panel" id="worker-registration"><h3 data-i18n="workerRegTitle">कामगार / तकनीशियन प्रोफाइल</h3><div class="form-grid">
+          <label><span data-i18n="fullName">पूरा नाम *</span><input name="name" required autocomplete="name"></label><label><span data-i18n="phone">मोबाइल नंबर *</span><input name="phone" type="tel" required pattern="[0-9+() -]{8,18}" autocomplete="tel"></label>
+          <label><span data-i18n="district">जिला *</span><select name="district" data-mp-district required></select></label><label><span data-i18n="town">शहर / कस्बा</span><input name="town" autocomplete="address-level2"></label><label><span data-i18n="locality">इलाका / लोकेशन</span><input name="locality"></label><label><span data-i18n="trade">काम / ट्रेड *</span><input name="trade" required></label>
+          <label><span data-i18n="experience">अनुभव (वर्ष)</span><input name="experience" type="number" min="0" max="60"></label><label><span data-i18n="charge">दैनिक मजदूरी / फीस (₹)</span><input name="charge" type="number" min="0"></label>
+          <label><span data-i18n="availability">उपलब्धता</span><select name="availability"><option data-i18n="chooseOption">चुनें</option><option data-i18n="availableNow">अभी उपलब्ध</option><option data-i18n="availableSoon">बाद में उपलब्ध</option></select></label><label><span data-i18n="profilePhoto">प्रोफाइल फोटो (वैकल्पिक)</span><input name="photo" type="file" accept="image/*"></label>
+          <label class="full-field"><span data-i18n="workDescription">काम का विवरण</span><textarea name="description" rows="3"></textarea></label>
+        </div><button class="button button-orange" type="submit" data-i18n="registerWorker">कामगार रजिस्टर करें</button><p class="form-note" data-i18n="localDemo">डेमो: जानकारी आपके ब्राउज़र में ही रहेगी।</p></form>
+        <form class="form-panel" id="supplier-registration"><h3 data-i18n="supplierRegTitle">सप्लायर / व्यवसाय रजिस्ट्रेशन</h3><div class="form-grid">
+          <label><span data-i18n="businessName">व्यवसाय का नाम *</span><input name="business" required autocomplete="organization"></label><label><span data-i18n="contactPerson">संपर्क व्यक्ति *</span><input name="name" required autocomplete="name"></label>
+          <label><span data-i18n="phone">मोबाइल नंबर *</span><input name="phone" type="tel" required pattern="[0-9+() -]{8,18}" autocomplete="tel"></label><label><span data-i18n="district">जिला *</span><select name="district" data-mp-district required></select></label><label><span data-i18n="town">शहर / कस्बा</span><input name="town" autocomplete="address-level2"></label><label><span data-i18n="locality">इलाका / लोकेशन</span><input name="locality"></label>
+          <label class="full-field"><span data-i18n="supplierCategories">उत्पाद / मशीनरी कैटेगरी *</span><input name="categories" required></label><label class="full-field"><span data-i18n="businessDescription">व्यवसाय का विवरण</span><textarea name="description" rows="3"></textarea></label>
+        </div><button class="button button-orange" type="submit" data-i18n="registerSupplier">सप्लायर रजिस्टर करें</button><p class="form-note" data-i18n="localDemo">डेमो: जानकारी आपके ब्राउज़र में ही रहेगी।</p></form>
+      </div>
+    </section>
+
+    <section class="about-section" id="about"><div class="page-width about-layout">
+      <div class="about-image"><img src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?auto=format&amp;fit=crop&amp;w=1200&amp;q=85" alt="औद्योगिक उपकरण के पास काम करते इंजीनियर" loading="lazy" data-fallback="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&amp;fit=crop&amp;w=1000&amp;q=80"><span class="image-caption" data-i18n="aboutImageCaption">ENGINEERING • WORKFORCE • EQUIPMENT</span></div>
+      <div class="about-copy"><p class="section-kicker" data-i18n="aboutKicker">09 / ABOUT YANTRA</p><h2 data-i18n="aboutTitle">इंजीनियरिंग की दुनिया को जोड़ने वाला प्लेटफॉर्म</h2><p data-i18n="aboutCopyOne">YANTRA का उद्देश्य इंजीनियरिंग, निर्माण, उद्योग और दैनिक जीवन से जुड़े कामों के लिए कामगारों, इंजीनियरों, तकनीशियनों, सेवाओं, औजारों और मशीनरी की जानकारी एक जगह उपलब्ध कराना है।</p><p data-i18n="aboutCopyTwo">हमारा लक्ष्य है कि सही काम के लिए सही व्यक्ति, सही उपकरण और उपयुक्त मशीनरी ढूंढना आसान हो। यह वेबसाइट अभी एक डेमो है; यहां कोई प्रदाता सत्यापित या बुकिंग की गारंटी नहीं है।</p><div class="about-tagline"><b>YANTRA</b><span data-i18n="brandLine">Your All-in-One Network for Technical Resources &amp; Assistance</span><span data-i18n="hindiTagline">हर इंजीनियरिंग काम के लिए लोग, औजार और मशीनें।</span></div></div>
+    </div></section>
+
+    <section class="section page-width contact-section" id="contact">
+      <div class="contact-info"><p class="section-kicker" data-i18n="contactKicker">10 / CONTACT</p><h2 data-i18n="contactTitle">संपर्क करें</h2><p data-i18n="contactIntro">डेमो से जुड़ा सवाल या सुझाव भेजें। इस फॉर्म का कोई संदेश सर्वर पर नहीं भेजा जाता।</p><div class="contact-lines"><p><i data-lucide="map-pin"></i><span data-i18n="addressPlaceholder">व्यावसायिक पता: जल्द जोड़ा जाएगा</span></p><p><i data-lucide="mail"></i><span data-i18n="contactEmail">ईमेल: डेमो — अभी कॉन्फ़िगर नहीं</span></p><p><i data-lucide="phone"></i><span data-i18n="contactPhone">फोन: डेमो — अभी कॉन्फ़िगर नहीं</span></p></div></div>
+      <form class="form-panel contact-form" id="contact-form"><h3 data-i18n="contactFormTitle">हमें संदेश भेजें</h3><div class="form-grid">
+        <label><span data-i18n="fullName">नाम *</span><input name="name" required autocomplete="name"></label><label><span data-i18n="phoneOptional">मोबाइल नंबर</span><input name="phone" type="tel" pattern="[0-9+() -]{8,18}" autocomplete="tel"></label>
+        <label><span data-i18n="email">ईमेल</span><input name="email" type="email" autocomplete="email"></label><label><span data-i18n="subject">विषय *</span><input name="subject" required></label>
+        <label class="full-field"><span data-i18n="message">संदेश *</span><textarea name="message" rows="4" required></textarea></label>
+      </div><button class="button button-orange" type="submit" data-i18n="sendMessage">संदेश भेजें</button><p class="form-note" data-i18n="localDemo">डेमो: जानकारी आपके ब्राउज़र में ही रहेगी।</p></form>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="page-width footer-main">
+    <div class="footer-brand"><a class="brand brand-light" href="#home"><span class="brand-mark">Y</span><span>YANTRA<small data-i18n="brandLine">Your All-in-One Network for Technical Resources &amp; Assistance</small></span></a><p data-i18n="hindiTagline">हर इंजीनियरिंग काम के लिए लोग, औजार और मशीनें।</p></div>
+    <div><h3 data-i18n="quickLinks">त्वरित लिंक</h3><a href="#workers" data-i18n="navWorkers">कामगार खोजें</a><a href="#labour-rates" data-i18n="navLabour">मजदूरी दरें</a><a href="#monthly-services" data-i18n="navMonthly">मासिक घरेलू सेवाएँ</a><a href="#services" data-i18n="navServices">सेवाएँ</a><a href="#tools" data-i18n="navTools">औजार</a><a href="#rent" data-i18n="navRent">किराया</a></div>
+    <div><h3 data-i18n="forBusiness">कामगार और व्यवसाय</h3><a href="#worker-registration" data-i18n="registerWorker">कामगार रजिस्टर करें</a><a href="#supplier-registration" data-i18n="registerSupplier">सप्लायर रजिस्टर करें</a><a href="#post-job" data-i18n="postJob">काम पोस्ट करें</a></div>
+    <div><h3 data-i18n="footerContact">संपर्क एवं जानकारी</h3><a href="#contact" data-i18n="contactTitle">संपर्क करें</a><a href="#about" data-i18n="aboutTitle">हमारे बारे में</a><span data-i18n="privacyDemo">प्राइवेसी: डेमो डेटा केवल इस ब्राउज़र में</span></div>
+  </div><div class="footer-bottom page-width"><span>© <span id="year"></span> YANTRA</span><span data-i18n="footerDemo">डेमो मार्केटप्लेस • वास्तविक बुकिंग या भुगतान सक्रिय नहीं</span></div></footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div><div class="drawer-backdrop hidden" id="drawer-backdrop"></div>
+  <aside class="side-drawer" id="cart-drawer" aria-label="Inquiry cart" aria-hidden="true"><div class="drawer-head"><div><p class="section-kicker" data-i18n="demoCart">DEMO CART</p><h2 data-i18n="cartTitle">इन्क्वायरी कार्ट</h2></div><button class="icon-button drawer-close" type="button" aria-label="बंद करें"><i data-lucide="x"></i></button></div><div id="cart-items" class="drawer-items"></div><p class="form-note" data-i18n="cartDisclosure">यह केवल लोकल डेमो कार्ट है। भुगतान या ऑर्डर सबमिट नहीं होता।</p><button class="button button-orange drawer-checkout" id="demo-checkout" type="button" data-i18n="demoCheckout">डेमो पूछताछ करें</button></aside>
+  <dialog id="detail-dialog" class="detail-dialog"><button class="icon-button dialog-close" type="button" aria-label="बंद करें"><i data-lucide="x"></i></button><div id="dialog-content"></div></dialog>
+  <dialog id="login-dialog" class="detail-dialog login-dialog"><button class="icon-button dialog-close" type="button" aria-label="बंद करें"><i data-lucide="x"></i></button><p class="section-kicker" data-i18n="demoLogin">DEMO LOGIN</p><h2 data-i18n="loginTitle">लॉगिन सुविधा अभी डेमो में उपलब्ध नहीं</h2><p data-i18n="loginCopy">अभी कोई असली अकाउंट या प्रमाणीकरण नहीं है। प्रोफाइल फॉर्म केवल इस ब्राउज़र में डेमो डेटा सहेजते हैं।</p><a class="button button-orange" href="#register" data-i18n="registerCta">रजिस्टर करें</a></dialog>
+  <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script><script src="js/mp-districts.js" defer></script><script src="js/main.js" defer></script><script src="js/labour.js" defer></script><script src="js/monthly-services.js" defer></script>
+</body>
+</html>
